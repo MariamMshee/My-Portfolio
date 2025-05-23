@@ -192,7 +192,7 @@ nav {
 .cta-buttons {
     display: flex;
     flex-wrap: wrap;  /* Allows buttons to wrap if screen is small */
-    gap: 10px;         /* Adds space between buttons */
+    gap: 5px;         /* Adds space between buttons */
     margin-top: 20px;
 }
 
@@ -312,7 +312,7 @@ nav {
 .page-header {
     padding: 5rem 5%;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: var(--white-color);
+    color: black;
     text-align: center;
 }
 
@@ -537,7 +537,7 @@ nav {
     text-align: center;
     margin-bottom: 3rem;
     font-size: 2.5rem;
-    color: var(--dark-color);
+    color: white;
 }
 
 .reference-cards {
@@ -549,7 +549,7 @@ nav {
 }
 
 .reference-card {
-    background-color: var(--light-color);
+    background-color: purple;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: var(--shadow);
@@ -562,7 +562,7 @@ nav {
 }
 
 .reference-card h3 {
-    color: var(--dark-color);
+    color: white;
     margin-bottom: 0.5rem;
 }
 
