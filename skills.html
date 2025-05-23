@@ -3,94 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-    <title>Skills - Mariam Mshee</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mariam Mshee - Portfolio</title>
+    <link rel="icon" href="images/favicon.ico" type="images/fav.png">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="navbar">
-        <div class="logo">Mariam Mshee</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="skills.html" class="active">Skills</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="download-cv">
-            <button id="downloadBtn">Download CV</button>
-        </div>
-    </div>
-
-    <div class="skills-section">
-        <h1>My Technical Skills</h1>
-        
-        <div class="skill-categories">
-            <div class="skill-category">
-                <h2>ERP Systems</h2>
-                <div class="skill-bar">
-                    <div class="skill-name">Mzizi School Management ERP</div>
-                    <div class="skill-progress">
-                        <div class="skill-level" style="width: 95%"></div>
-                    </div>
-                    <div class="skill-percent">95%</div>
-                </div>
+    <header>
+        <nav>
+            <div class="logo">Mariam Mshee</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html" class="active">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
-            
-            <div class="skill-category">
-                <h2>Data Analytics</h2>
-                <div class="skill-bar">
-                    <div class="skill-name">Power BI</div>
-                    <div class="skill-progress">
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>Technical Skills</h1>
+        <p>A comprehensive overview of my technical competencies</p>
+    </section>
+
+    <section class="skills-container">
+        <div class="skill-category">
+            <h2>Programming Languages</h2>
+            <div class="skill-bars">
+                <div class="skill-item">
+                    <span class="skill-name">Python</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 70%"></div>
+                    </div>
+                    <span class="skill-percent">70%</span>
+                </div>
+                <!-- <div class="skill-item">
+                    <span class="skill-name">C</span>
+                    <div class="skill-bar">
                         <div class="skill-level" style="width: 85%"></div>
                     </div>
-                    <div class="skill-percent">85%</div>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-name">Excel</div>
-                    <div class="skill-progress">
-                        <div class="skill-level" style="width: 90%"></div>
-                    </div>
-                    <div class="skill-percent">90%</div>
-                </div>
-            </div>
-            
-            <div class="skill-category">
-                <h2>Database Management</h2>
-                <div class="skill-bar">
-                    <div class="skill-name">SQL</div>
-                    <div class="skill-progress">
-                        <div class="skill-level" style="width: 88%"></div>
-                    </div>
-                    <div class="skill-percent">88%</div>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-name">MySQL</div>
-                    <div class="skill-progress">
-                        <div class="skill-level" style="width: 82%"></div>
-                    </div>
-                    <div class="skill-percent">82%</div>
-                </div>
-            </div>
-            
-            <div class="skill-category">
-                <h2>Cloud Technologies</h2>
-                <div class="skill-bar">
-                    <div class="skill-name">AWS</div>
-                    <div class="skill-progress">
+                    <span class="skill-percent">85%</span>
+                </div> -->
+                <div class="skill-item">
+                    <span class="skill-name">SQL</span>
+                    <div class="skill-bar">
                         <div class="skill-level" style="width: 80%"></div>
                     </div>
-                    <div class="skill-percent">80%</div>
+                    <span class="skill-percent">80%</span>
+                </div>
+                <!-- <div class="skill-item">
+                    <span class="skill-name"></span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 75%"></div>
+                    </div>
+                    <span class="skill-percent">75%</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">JavaScript</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%"></div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Java</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 95%"></div>
+                    </div>
+                    <span class="skill-percent">95%</span>
                 </div>
             </div>
         </div>
-    </div>
+
+        <div class="skill-category"> -->
+            <h2>Technical Skills</h2>
+            <div class="skill-grid">
+                <div class="skill-card">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Cloud Computing</h3>
+                    <p>Experience with AWS and cloud infrastructure management</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-ERP"></i>
+                    <h3>ERP Systems</h3>
+                    <p>Proficient with ERP Systems</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-Power-Query-Editor"></i>
+                    <h3>Power Query editor</h3>
+                    <p>Able to work with power Query Editor for data cleaning</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Data Analytics</h3>
+                    <p>Conversant with Data Analysis tools</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Power BI</h3>
+                    <p>Able to visualize data using Power BI</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-hdd"></i>
+                    <h3>Pivot Tables</h3>
+                    <p>Able to organise and filter data using Pivote Tables to build Dashboards and generate insights with Excel Charts </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="skill-category">
+            <h2>Certifications</h2>
+            <div class="certifications">
+                <div class="certification-card">
+                    <img src="images/aws.png" alt="AWS re/Start Certification">
+                    <h3>AWS re/Start</h3>
+                    <p>Certified in AWS Cloud Computing Practitioner</p>
+                    <a href="https://www.credly.com/badges/7a657745-3b80-460b-a901-b26eaf4affd6/linked_in?t=s6j2ov" target="_blank">View Credential</a>
+                </div>
+                <div class="certification-card">
+                    <img src="images/ethical.png" alt="Cisco Cyber-Security Certification">
+                    <h3>Cyber-Security</h3>
+                    <p>Certified by Cisco Network Academy</p>
+                    <a href="https://www.credly.com/badges/1e6aa844-e005-4325-b81a-f4701fac2925/linked_in_profile" target="_blank">View Credential</a>
+                </div>
+                <div class="certification-card">
+                    <img src="images/ibm.png" alt="IBM AI Certification">
+                    <h3>Artificial Intelligence Fundamentals</h3>
+                    <p>Certified by IBM</p>
+                    <a href="https://www.credly.com/badges/097fb2f7-c62d-48c0-b7e3-887fc1d60eb8/public_url" target="_blank">View Credential</a>
+                </div>
+                <div class="certification-card">
+                    <div class="certificate-container">
+                        <img src="images/certificate.png" alt="Virtual Internship Certificate" class="certificate-img" style="width: 100%; height: auto; object-fit: contain; cursor: pointer;">
+                        <div class="modal" id="certificateModal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="modalImg">
+                        </div>
+                    </div>
+                    <h3 style="padding: 0.5rem;">Virtual Internship</h3>
+                    <p style="padding: 0 0.5rem;">Jilian Low- Chief Academic Officer</p>
+                    <a href="https://www.linkedin.com/posts/rashid-juma-963497194_virtualinternship-careergrowth-remoteworkskills-activity-7328707410133516288-ZXsE?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC2iPZsBHnVmeduQesN0aZ5IkbQOg5ceGM4" target="_blank">View Credential</a>
+                    <style>
+                        .certificate-container {
+                            position: relative;
+                        }
+                        .modal {
+                            display: none;
+                            position: fixed;
+                            z-index: 999;
+                            left: 0;
+                            top: 0;
+                            width: 100vw;
+                            height: 100vh;
+                            background-color: rgba(0,0,0,0.95);
+                            overflow: hidden;
+                        }
+                        .modal-content {
+                            margin: auto;
+                            display: block;
+                            width: 80%;
+                            max-width: 900px;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                        .close {
+                            position: absolute;
+                            right: 35px;
+                            top: 15px;
+                            color: #f1f1f1;
+                            font-size: 40px;
+                            font-weight: bold;
+                            cursor: pointer;
+                        }
+                    </style>
+                   
+                    
+                </div>
+            </div>
+        </div> -->
+    </section>
 
     <footer>
+        <div class="social-links">
+            <a href="https://github.com/MariamMshee" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/mariam-mshee-b68787292/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
         <p>&copy; 2025 Mariam Mshee. All rights reserved.</p>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

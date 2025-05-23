@@ -3,64 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-    <title>Mariam Mshee - Technologist Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mariam Mshee - Portfolio</title>
+    <link rel="icon" href="images/favicon.ico" type="images/fav.png">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="navbar">
-        <div class="logo">Mariam Mshee</div>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="download-cv">
-            <button id="downloadBtn">Download CV</button>
-        </div>
-    </div>
+    <header>
+        <nav>
+            <div class="logo">Mariam Mshee</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
 
-    <div class="hero">
+    <section class="hero">
         <div class="hero-content">
-            <h1>Mariam Mshee</h1>
-            <p class="subtitle">Data Scientist</p>
-            <p class="description">Passionate about using data to solve real world challenges</p>
-            <div class="social-icons">
-                <a href="https://linkedin.com/in/mariam-mshee-b68787292" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:mariammshee883@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a href="tel:+254703675760"><i class="fas fa-phone"></i></a>
+            <h1>Mariam mshee</h1>
+            <h2>Data Analyst | ERP & Information Systems Specialist</h2>
+            <p>
+            <p>A detail-oriented and results-driven Data Analyst with a strong foundation in ERP systems, data management, and administrative operations. Skilled in transforming raw data into actionable insights through tools such as Excel, Power BI, SQL, and Python. Proven ability to streamline processes, automate reporting, and support data-driven decision-making across diverse sectors including education, government, and community development. Passionate about continuous learning and delivering value through clean, well-structured data.
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn primary-btn">Contact Me</a>
+                <a href="skills.html" class="btn secondary-btn">View Skills</a>
+                <a href="projects.html" class="btn secondary-btn">View Projects</a>
+                <a href="https://datascienceportfol.io/mariammshee883" class="btn secondary-btn">
+                    <!-- <i class="fas fa-download"> -->
+                    My Portfolio
+                </a>
             </div>
         </div>
-    </div>
+        <div class="hero-image">
+            <img src="images/me.jpg" alt="Mariam Mshee">
+        </div>
+    </section>
 
-    <div class="featured">
-        <div class="featured-card">
-            <div class="card-content">
-                <h2>ERP Specialist</h2>
-                <p>Expert in Mzizi School Management ERP with integration capabilities</p>
+    <section class="highlights">
+        <h2>Education, Technical Expertise & Certifications</h2>
+        <div class="highlight-cards">
+            <div class="card">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Education</h3>
+                <p>BSc in Information Systems Management</p>
+                <i class="fas fa-laptop-code"></i>
+                <h3>Technical Expertise</h3>
+                <p>Proficient in Advanced Excel, SQL, Power BI, and Python </p>
+            </div>
+            <div class="card">
+                <i class="image"></i>
+                <img src="images/aws.png" alt="Project placeholder">
+                <p>AWS Certified Cloud Practitioner</p>
+            </div>
+            <div class="card">
+                <i class="image"></i>
+                <div class="project-image">
+                <img src="images/DataAnalytics2.png" alt="Project placeholder">
+                <p>Google Data Analytics</p>
+            </div>
+            <div class="card">
+                <!-- <i class="fas fa-users"></i> -->
+                <!-- <h3>Professional Experience</h3> -->
+                <p>Google Data Analytics Professional Certificate</p>
             </div>
         </div>
-        <div class="featured-card">
-            <div class="card-content">
-                <h2>Data Analytics</h2>
-                <p>Proficient in Power BI, Excel, and Tableau for data visualization</p>
+    </section>
+
+    <section class="education">
+        <h2>Work Experience</h2>
+        <!-- <div class="timeline">
+            <div class="timeline-item">
+                <span class="date">Feb 2025-May 2025</span>
+                <h3>Software Engineering</h3>
+                <p>Open University of Kenya,Skies BootCamp Cohort 2</p>
+            </div> -->
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="date">September 2023 - Date</span>
+                    <h3>Admin and Procurement | Mudzini School</h3>
+                    <p>-Managing school-wide ERP systems, enhancing data accuracy and automation</p>
+                    <p>-Utilizing Excel and MySQL for data collection, analysis, and reporting</p>
+                    <p>-Tracking supplier performance, price trends, and purchase history using Excel and Power BI to support cost-effective procurement decisions.</p>
+                    <p>-Analyzing inventory levels and procurement data to optimize stock management and generate monthly spend reports for the finance team.</p>
+
+                </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="date">August 2021- August 2023</span>
+                <h3>Community Leader Business & ICT | Digital Opportunity Trust</h3>
+                <p>-Designed and facilitated digital skills and entrepreneurship training for youth and women, focusing on ICT tools, business modeling, and data literacy</p>
+                <p>-Supported monitoring and evaluation (M&E) of the “Daring to Shift” project by compiling reports, visualizing impact metrics, and identifying areas for improvement through data</p>
+                <p>-Collaborated with stakeholders and partners to develop tech-based solutions for local challenges, including digital marketing strategies and mobile-first outreach methods</p>
+                <p>-Collected, cleaned, and analyzed training feedback and participation data to track learner engagement, performance, and program effectiveness using Excel and Google Sheets</p>
+            </div>
+            <!-- <div class="timeline"> -->
+                <!-- <div class="timeline-item">
+                    <span class="date">2024-2024</span>
+                    <h3>Software Engineering</h3>
+                    <p>Open University of Kenya,Skies BootCamp Cohort 2</p>
+                </div> -->
+            <div class="timeline-item">
+                <span class="date">October 2019 - June 2021</span>
+                <h3>Data Entry Specialist | Judicial Service Commission</h3>
+                <p>-Entered, updated, and validated case-related information into the Judicial Case Tracking System (JCTS), ensuring high levels of data accuracy and completeness.</p>
+                <p>-Contributed to the early stages of digitization efforts by recommending improvements in data categorization and filing structures for long-term efficiency.</p>
+                <p>-Reviewed and reconciled source documents and court files against digital records to identify inconsistencies, reduce duplication, and maintain clean datasets.</p>
+                <p>-Analyzed case data trends to assist supervisors in understanding court workload distribution and improving scheduling efficiency.</p>
+            </div>
+            <!-- <div class="timeline-item">
+                <span class="date">July 2024 - Oct 2024</span>
+                <h3>CIPIT's Data Protection</h3>
+                <p>Offered by Strathmore University</p>
+            </div>
+            <div class="timeline-item">
+                <span class="date">Oct 2023 - Dec 2023</span>
+                <h3>Cyber-Security</h3>
+                <p>Cisco Network Academy</p>
+            </div> <div class="timeline-item">
+                <span class="date">Oct 2019 - Dec 2021</span>
+                <h3>Diploma in Information Technology</h3>
+                <p>Kisiwa Technical Training Institute</p>
             </div>
         </div>
-        <div class="featured-card">
-            <div class="card-content">
-                <h2>Cloud Technologies</h2>
-                <p>AWS Certified Cloud Practitioner with EC2, S3, and Lambda expertise</p>
-            </div>
-        </div>
-    </div>
+    </section> -->
 
     <footer>
-        <p>&copy; 2025 Mariam Mshee. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/MariamMshee" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/mariam-mshee-b68787292/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>&copy; 2025 Mariam mshee. All rights reserved.</p>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

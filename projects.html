@@ -3,73 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-    <title>Projects - Mariam Mshee</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mariam Mshee - Portfolio</title>
+    <link rel="icon" href="images/favicon.ico" type="images/fav.png">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="navbar">
-        <div class="logo">Mariam Mshee</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html" class="active">Projects</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="download-cv">
-            <button id="downloadBtn">Download CV</button>
-        </div>
-    </div>
+    <header>
+        <nav>
+            <div class="logo">Mariam Mshee</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
 
-    <div class="projects-section">
+    <section class="page-header">
         <h1>My Projects</h1>
-        
-        <div class="project-card">
-            <div class="project-content">
-                <h2>School ERP Integration</h2>
-                <p class="project-period">August 2023 - Present</p>
-                <p>Successfully integrated Mzizi ERP with QuickBooks and MPESA, reducing fee reconciliation time by 40%.</p>
-                <ul class="technologies">
-                    <li>Mzizi ERP</li>
-                    <li>QuickBooks</li>
-                    <li>MPESA API</li>
-                </ul>
+        <p>A selection of my recent work and projects</p>
+    </section>
+
+    <section class="projects-container">
+        <div class="project-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/Power BI.png" alt="Project placeholder">
+                </div>
+                <div class="project-content">
+                    <h2>World Happiness Score By Country</h2>
+                    <p>This project uses data that is compiled from the annual World Happiness Report, it draws primarily on data from the Gallup World Poll and includes key indicators such as GDP per capita, social support, healthy life expectancy, freedom to make life choices, generosity, and perceptions of corruption. The goal is to go beyond traditional economic measures like GDP and provide a broader understanding of what drives happiness and quality of life around the world. </p>
+                    <div class="project-tech">
+                        <span>Power Query editor</span>
+                        <span>Power BI</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/MariamMshee/Happiness-Indicators-Project.git" target="_blank"><i class="fab fa-github"></i></a>
+                         <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" 
+                         src="images/Power BI.png" allowfullscreen></iframe>
+                        <!-- <a href="#" class="btn secondary-btn" target="_blank">Live Demo</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/Prototype.png" alt="Project placeholder">
+                </div>
+                <div class="project-content">
+                    <h2>Smart Agritech Kenya</h2>
+                    <p>Smart Agritech Kenya App is a climate-smart agriculture mobile solution designed to support smallholder farmers across Kenya. The app delivers timely, location-specific farming advice via SMS and USSD, ensuring accessibility even in low-internet areas. It provides weather forecasts, crop-specific guidance, pest and disease alerts, and best farming practices to help farmers make informed decisions, improve yields, and enhance resilience to climate change. By leveraging technology, the app empowers farmers to optimize their productivity and contribute to sustainable agriculture and food security.</p>
+                    <div class="project-tech">
+                        <span>Figma</span>
+                        <span>Canva</span>
+                        <span>Research</span>
+                    </div> 
+                    <div class="project-links">
+ <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/NmVhdnLyYX7iNuNZcd6V06/AGP?node-id=0-1&embed-host=share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+                       <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/Excel 2.png" alt="Project placeholder">
+                </div>
+                <div class="project-content">
+                    <h2>Telco Customer Churn</h2>
+                    <p>The primary goal of this project is to help identify the factors that influence whether a customer is likely to leave (churn) or stay with the company. Key features include customer tenure, monthly charges, contract type, internet service, and whether they use services like online backup or tech support. This is meant to gain valuable insights into customer behavior, improve customer service strategies, and implement targeted interventions to reduce churn and support strategic decision-making in customer relationship management.</p>
+                    <div class="project-tech">
+                        <span>Advanced Excel</span>
+                        <span>Pivot Tables</span>
+                        <span>Excel Dashboards</span>
+                    </div> 
+                    <div class="project-links">
+                        <a href="https://github.com/MariamMshee/Data-Analysis-Project-Telco-Customer-Churn.git" target="_blank"><i class="fab fa-github"></i></a>
+                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" 
+                            src="images/Excel 2.png" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+ 
+                        <div class="project-card">
+                <div class="project-image">
+                    <img src="images/Smart Agritech Kenya.png" alt="Project placeholder">
+                </div>
+                <div class="project-content">
+                    <h2>Smart agritech App Presentation</h2>
+                    <p>A video presentation on how the smart Agritech kenya App operates.A project I participated in with my fellow Data Tech Team Members. </p>
+                    <div class="project-tech">
+                        <span>Canva</span>
+                        <span>Research</span>
+                        <span>figma</span>
+                    </div> 
+                    <div class="project-links">
+                        <iframe width="560" height="315" 
+                            src="https://www.youtube.com/embed/3MG__E8LbEI?si=pwENV4OQx-yqHkjD" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+                        <div class="project-card">
+                <div class="project-image">
+                    <img src="images/Canva.png" alt="Project placeholder">
+                </div>
+                <div class="project-content">
+                    <h2>Climate Change and It's Impact On Agriculter</h2>
+                    <p>A presentation by my Team. </p>
+                    <div class="project-tech">
+                        <span>Canva</span>
+                        <span>Research</span>
+                        <span>Data Analysis</span>
+                    </div> 
+                    <div class="project-links">
+ <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https://www.canva.com/design/DAGllJ8FOUQ/qdFyGiF5ngrjcA1_On3NOA/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+    <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGllJ8FOUQ&#x2F;qdFyGiF5ngrjcA1_On3NOA&#x2F;view?utm_content=DAGllJ8FOUQ&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" 
+    target="_blank" 
+    rel="noopener">Smart Agrictech Kenya – Empowering Farmers through Climate-Smart Solutions</a> by VICTOR MAGADI
+                    </div>
+                </div>
             </div>
         </div>
-        
-        <div class="project-card">
-            <div class="project-content">
-                <h2>Student Record Optimization</h2>
-                <p class="project-period">August 2023 - Present</p>
-                <p>Optimized student admission workflows and academic reporting, improving data accuracy across departments.</p>
-                <ul class="technologies">
-                    <li>Mzizi School Management ERP</li>
-                    <li>SQL</li>
-                    <li>Python</li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="project-card">
-            <div class="project-content">
-                <h2>Community Digital Literacy Program</h2>
-                <p class="project-period">August 2021 - April 2023</p>
-                <p>Conducted training workshops on digital literacy and business applications for community members.</p>
-                <ul class="technologies">
-                    <li>Database Management</li>
-                    <li>Workshop Facilitation</li>
-                    <li>Community Engagement</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    </section>
 
     <footer>
-        <p>&copy; 2025 Mariam Mshee. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/MariamMshee" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/mariam-mshee-b68787292/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>&copy; 2023 Mariam Mshee. All rights reserved.</p>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -3,71 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-    <title>Contact - Mariam Mshee</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mariam Mshee - Portfolio</title>
+    <link rel="icon" href="images/favicon.ico" type="images/fav.png">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="navbar">
-        <div class="logo">Mariam Mshee</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-        <div class="download-cv">
-            <button id="downloadBtn">Download CV</button>
-        </div>
-    </div>
+    <header>
+        <nav>
+            <div class="logo">Mariam Msheea</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
 
-    <div class="contact-section">
+    <section class="page-header">
         <h1>Get in Touch</h1>
-        
+        <p>I'd love to hear from you</p>
+    </section>
+
+    <section class="contact-container">
         <div class="contact-info">
-            <div class="contact-item">
+            <div class="contact-card">
                 <i class="fas fa-envelope"></i>
-                <p>mariammohdmshee@gmail.com</p>
+                <h3>Email</h3>
+                <p>mariammshe883@gmail.com</p>
             </div>
-            <div class="contact-item">
+            <div class="contact-card">
                 <i class="fas fa-phone"></i>
-                <p>+254 703 675760</p>
+                <h3>Phone</h3>
+                <p>+254 747675761</p>
             </div>
-            <div class="contact-item">
+            <div class="contact-card">
                 <i class="fas fa-map-marker-alt"></i>
-                <p>Nairobi, Nairobi County, Kenya</p>
-            </div>
-            <div class="contact-item">
-                <i class="fab fa-linkedin"></i>
-                <p>linkedin.com/in/mariam-mshee-b68787292</p>
+                <h3>Location</h3>
+                <p>P.O Box 84546-80100, Kenya</p>
+                <p>Mombasa</p>
             </div>
         </div>
-        
+
         <div class="contact-form">
-            <form id="contactForm">
+            <h2>Send Me a Message</h2>
+            <form action="https://formspree.io/f/xpwppjzp" method="POST" id="contactForm">
                 <div class="form-group">
-                    <label for="name">Name</label>
+                    <label for="name">Your Name</label>
                     <input type="text" id="name" name="name" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email</label>
+                    <label for="email">Your Email</label>
                     <input type="email" id="email" name="email" required>
                 </div>
                 <div class="form-group">
-                    <label for="message">Message</label>
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
-                <button type="submit" class="submit-btn">Send Message</button>
+                <button type="submit" class="btn primary-btn">Send Message</button>
             </form>
+            <div id="formStatus"></div>
         </div>
-    </div>
+    </section>
+
+    <section class="references">
+        <h2>Professional References</h2>
+        <div class="reference-cards">
+            <div class="reference-card">
+                <h3>Ms. Lucy Muthoni</h3>
+                <p>Human Resource Manager</p>
+                <p>Mudzini Cambridge International School</p>
+                <!-- <p><i class="fas fa-phone"></i> +254 720704647</p>
+                <p><i class="fas fa-envelope"></i> hr@mudzinischool.org</p> -->
+            </div>
+            <div class="reference-card">
+                <h3>Ms. Lucy Mwangi</h3>
+                <p>Human Resource Officer</p>
+                <p>Digital Opportunity Trust</p>
+                <!-- <p><i class="fas fa-phone"></i> +254 705810200</p>
+                <p><i class="fas fa-envelope"></i> kenya@dotrust.org</p> -->
+            </div>
+            <div class="reference-card">
+                <h3>Mr. Michael Ngigi</h3>
+                <p>Mzizi ERP System Developer</p>
+                <p>Nairobi</p>
+                <!-- <p><i class="fas fa-phone"></i> +254 713929345</p>
+                <p><i class="fas fa-envelope"></i> michael@mzizi.co.ke</p> -->
+            </div>
+        </div>
+    </section>
 
     <footer>
+        <div class="social-links">
+            <a href="https://github.com/MariamMshee" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/mariam-mshee-b68787292/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
         <p>&copy; 2025 Mariam Mshee. All rights reserved.</p>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            if (!name || !email || !subject || !message) {
+                showFormStatus('error', 'Please fill in all fields');
+                return;
+            }
+            
+            // Submit form using fetch API
+            fetch('https://formspree.io/f/xpwppjzp', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    name: name,
+                    email: email,
+                    subject: subject,
+                    message: message
+                })
+            })
+            .then(response => {
+                if (response.ok) {
+                    showFormStatus('success', 'Message sent successfully!');
+                    document.getElementById('contactForm').reset();
+                } else {
+                    throw new Error('Error sending message');
+                }
+            })
+            .catch(error => {
+                showFormStatus('error', 'Error sending message. Please try again later.');
+                console.error('Error sending email:', error);
+            });
+        });
+        
+        function showFormStatus(type, message) {
+            const statusElement = document.getElementById('formStatus');
+            statusElement.classList.remove('success', 'error');
+            statusElement.classList.add(type);
+            statusElement.textContent = message;
+            statusElement.style.display = 'block';
+            
+            setTimeout(() => {
+                statusElement.style.display = 'none';
+            }, 5000);
+        }
+    </script>
 </body>
 </html>
