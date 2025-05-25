@@ -166,6 +166,17 @@ nav {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+.btn {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
 
 .primary-btn {
     background-color: var(--white-color);
